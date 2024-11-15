@@ -1,0 +1,21 @@
+.header {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.gasBlock {
+  background-color: #e3f1f7;
+  border-radius: 12px;
+  padding: 15px;
+  border: 1px solid #213547;
+  width: 250px;
+  height: 320px;
+  margin: 20px auto;
+}
+.contentList {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 17px;
+}
