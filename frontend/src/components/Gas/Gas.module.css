@@ -2,6 +2,16 @@
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header svg {
+  margin-left: 12px;
+  font-size: 24px;
+  vertical-align: middle;
+  transform: translateY(-2px);
 }
 
 .gasBlock {
