@@ -1,4 +1,29 @@
-.userName {
+.utility {
+  color: #213547;
+}
+
+.wise {
+  color: #b29362;
+  margin-left: 12px;
+}
+
+.home {
+  color: #fcb4bf;
+  margin-left: 12px;
+}
+
+.homeIcon {
+  color: #213547;
+  font-size: 35px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+h1 {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* .userName {
   position: absolute;
   top: 3px;
   right: 160px;
@@ -24,4 +49,4 @@
     text-align: center;
     white-space: nowrap;
   }
-}
+} */
