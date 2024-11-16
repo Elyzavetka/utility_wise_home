@@ -23,9 +23,31 @@
   height: 320px;
   margin: 20px auto;
 }
+
+.gasBlock:hover {
+  background-color: #ddf3fb;
+  border-color: #b29362;
+}
+
+.gasBlock:hover .header svg {
+  animation: pulse 1s infinite;
+}
+
 .contentList {
   display: flex;
   flex-direction: column;
   gap: 7px;
   font-size: 17px;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: translateY(-2px) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-2px) scale(1.1);
+    opacity: 0.85;
+  }
 }
