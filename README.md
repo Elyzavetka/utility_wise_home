@@ -16,10 +16,12 @@ A smart utility monitoring system for households.
 
 ## Tech Stack:
 
-- **JavaScript**: The primary language for both frontend and backend development.
+- **JavaScript**: The primary language for the frontend development.
 - **TypeScript**: A programming language based on JavaScript that adds static typing, allowing me to define variable and function types to catch errors early and improve code quality.
 - **React**: Used to build the user interface. Components are implemented to display and interact with data.
 - **Context API**: Used to manage global state and pass data between components without the need for prop drilling.
+- **Python**: The primary language for the backend development.
+- **Django**: A Python web framework that simplifies the development of secure, scalable, and maintainable web applications. 
 - **Vite**: A modern build tool and dev server, enabling fast builds and a smooth workflow for my web application.
 - **GraphQL**: A query language that connects the React frontend with the Django backend, enabling efficient data requests and updates from the PostgreSQL database.
 - **PostgreSQL**: A relational database used to store user information and text content associated with photo posts, such as titles and descriptions.
