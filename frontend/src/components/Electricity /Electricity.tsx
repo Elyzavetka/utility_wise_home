@@ -12,6 +12,7 @@ const Electricity: React.FC = () => {
       </h1>
       <div className={styles.contentList}>
         <div>Usage Graph</div>
+        <button className={styles.button}>Bill Estimate</button>
         <div>Bill Estimate</div>
         <div>Usage Trends</div>
         <div>Optimization</div>
