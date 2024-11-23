@@ -8,7 +8,7 @@
 - [Running the Project Locally](#running-the-project-locally)
 
 ## Project Description
-A smart utility monitoring system for households.
+A smart utility monitoring system for households that helps collect, store, and analyze data on electricity, water, and gas usage, while also providing tips to optimize costs and reduce spending.
 
 ## Preview
 ![cover image](https://github.com/Elyzavetka/utility_wise_home/blob/main/frontend/src/assets/project-preview.png)
