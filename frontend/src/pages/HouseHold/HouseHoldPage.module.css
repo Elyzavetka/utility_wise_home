@@ -1,0 +1,95 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.label {
+  font-size: 1rem;
+  color: #555;
+}
+
+.input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+input[type="number"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.button {
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 200px;
+  margin: 20px auto;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.button:active {
+  background-color: #388e3c;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-group label {
+  width: 150px;
+  text-align: right;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.required {
+  color: rgb(255, 0, 98); /* Цвет звездочки */
+  /* font-size: 1.5rem;
+  position: relative;
+  top: -0.5rem; 
+  left: 2px;  */
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  background-color: #fff !important;
+  color: #333 !important;
+  box-shadow: 0 0 0px 1000px #fff inset !important;
+}
+
+input:-moz-placeholder {
+  background-color: transparent;
+}
+
+input:-ms-input-placeholder {
+  background-color: transparent;
+}

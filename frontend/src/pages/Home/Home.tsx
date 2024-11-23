@@ -9,9 +9,9 @@ export const Home = () => {
   return (
     <>
       <h1>
-        <span className={styles.utility}>Utility</span>{" "}
-        <span className={styles.wise}>Wise</span>{" "}
-        <span className={styles.home}>Home</span>
+        <span className={styles.utilitySection}>Utility</span>{" "}
+        <span className={styles.wiseSection}>Wise</span>{" "}
+        <span className={styles.homeSection}>Home</span>
         <FontAwesomeIcon icon={faHouseChimney} className={styles.homeIcon} />
       </h1>
       <div className={styles.utilityContainer}>
