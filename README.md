@@ -12,6 +12,7 @@ A smart utility monitoring system for households.
 
 ## Preview
 ![cover image](https://github.com/Elyzavetka/utility_wise_home/blob/main/frontend/src/assets/project-preview.png)
+![cover image](https://github.com/Elyzavetka/utility_wise_home/blob/main/frontend/src/assets/household-form.png)
 
 
 ## Tech Stack:
