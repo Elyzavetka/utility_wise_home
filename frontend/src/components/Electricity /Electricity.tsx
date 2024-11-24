@@ -11,11 +11,10 @@ const Electricity: React.FC = () => {
         <FontAwesomeIcon icon={faBolt} />
       </h1>
       <div className={styles.contentList}>
-        <div>Usage Graph</div>
+        <button className={styles.button}>Usage Graph</button>
         <button className={styles.button}>Bill Estimate</button>
-        <div>Bill Estimate</div>
-        <div>Usage Trends</div>
-        <div>Optimization</div>
+        <button className={styles.button}>Usage Trends</button>
+        <button className={styles.button}>Optimization</button>
       </div>
     </div>
   );

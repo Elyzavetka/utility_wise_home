@@ -11,10 +11,10 @@ const Gas: React.FC = () => {
         <FontAwesomeIcon icon={faFire} />
       </h1>
       <div className={styles.contentList}>
-        <div>Usage Graph</div>
-        <div>Bill Estimate</div>
-        <div>Usage Trends</div>
-        <div>Optimization</div>
+        <button className={styles.button}>Usage Graph</button>
+        <button className={styles.button}>Bill Estimate</button>
+        <button className={styles.button}>Usage Trends</button>
+        <button className={styles.button}>Optimization</button>
       </div>
     </div>
   );

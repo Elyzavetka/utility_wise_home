@@ -13,6 +13,20 @@
   transform: translateY(-2px);
 }
 
+.button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 2px 15px;
+  width: 200px;
+  color: #213547;
+  font-size: 18px;
+}
+
+.button:hover {
+  border-color: #94aabf;
+}
+
 .waterBlock {
   background-color: #e3f1f7;
   border-radius: 12px;
@@ -35,6 +49,8 @@
 .contentList {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 7px;
   font-size: 17px;
 }
