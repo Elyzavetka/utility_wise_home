@@ -27,6 +27,9 @@ db.sqlite3
 local_settings.py
 *.env
 
+# Python compiled files
+*.cpython*
+
 # PostgreSQL
 *.sql
 *.sqlite3
