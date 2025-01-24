@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests = "*"
+python-decouple = "*"
+django-graphql-auth = "*"
+django-graphql-jwt = "*"
+graphene-django = "*"
+django-cors-headers = "*"
+psycopg2 = "*"
+django_extensions = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
