@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import styles from "./HouseHoldPage.module.css";
 
 const HouseHoldPage: React.FC = () => {
+  const [userName, setUserName] = useState("");
+  const [email, setEmail] = useState("");
   const [street, setStreet] = useState("");
   const [city, setCity] = useState("");
   const [zipCode, setZipCode] = useState("");
@@ -15,6 +17,8 @@ const HouseHoldPage: React.FC = () => {
   const handleSubmit = async () => {
     try {
       const householdData = {
+        userName,
+        email,
         street,
         city,
         zipCode,
@@ -28,13 +32,15 @@ const HouseHoldPage: React.FC = () => {
 
       console.log("Household Data Submitted:", householdData);
 
-      // GraphGL request
+      // REST API request
 
       alert("Data submitted successfully.");
     } catch (error) {
       console.error("Error submitting data:", error);
       alert("There was an error submitting the data.");
     }
+    setUserName("");
+    setEmail("");
     setStreet("");
     setCity("");
     setZipCode("");
@@ -55,6 +61,32 @@ const HouseHoldPage: React.FC = () => {
           handleSubmit();
         }}
       >
+        <div className={styles["form-group"]}>
+          <label htmlFor="userName">
+            User name<span className={styles.required}>*</span>:
+          </label>
+          <input
+            id="userName"
+            type="text"
+            value={street}
+            onChange={(e) => setStreet(e.target.value)}
+            placeholder="Enter your user name"
+            required
+          />
+        </div>
+        <div className={styles["form-group"]}>
+          <label htmlFor="email">
+            Email<span className={styles.required}>*</span>:
+          </label>
+          <input
+            id="email"
+            type="text"
+            value={street}
+            onChange={(e) => setStreet(e.target.value)}
+            placeholder="Enter your email"
+            required
+          />
+        </div>
         <div className={styles["form-group"]}>
           <label htmlFor="street">
             Street<span className={styles.required}>*</span>:
