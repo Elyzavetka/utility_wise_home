@@ -34,22 +34,34 @@ const HouseHoldPage: React.FC = () => {
 
       // REST API request
 
-      alert("Data submitted successfully.");
+      const response = await fetch("/api/household", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(householdData),
+      });
+
+      if (response.ok) {
+        alert("Data submitted successfully.");
+        setUserName("");
+        setEmail("");
+        setStreet("");
+        setCity("");
+        setZipCode("");
+        setCountry("");
+        setSquareMeter("");
+        setFloorCount("");
+        setPeopleCount("");
+        setDogsCount("");
+        setCatsCount("");
+      } else {
+        throw new Error("Failed to submit data");
+      }
     } catch (error) {
       console.error("Error submitting data:", error);
       alert("There was an error submitting the data.");
     }
-    setUserName("");
-    setEmail("");
-    setStreet("");
-    setCity("");
-    setZipCode("");
-    setCountry("");
-    setSquareMeter("");
-    setFloorCount("");
-    setPeopleCount("");
-    setDogsCount("");
-    setCatsCount("");
   };
 
   return (
@@ -68,8 +80,8 @@ const HouseHoldPage: React.FC = () => {
           <input
             id="userName"
             type="text"
-            value={street}
-            onChange={(e) => setStreet(e.target.value)}
+            value={userName}
+            onChange={(e) => setUserName(e.target.value)}
             placeholder="Enter your user name"
             required
           />
@@ -81,8 +93,8 @@ const HouseHoldPage: React.FC = () => {
           <input
             id="email"
             type="text"
-            value={street}
-            onChange={(e) => setStreet(e.target.value)}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter your email"
             required
           />
