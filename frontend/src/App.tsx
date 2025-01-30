@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ApolloProvider, InMemoryCache, ApolloClient } from "@apollo/client";
 import { Home } from "./pages/Home/Home";
 import HouseHoldPage from "./pages/HouseHold/HouseHoldPage";
-import Cookies from "js-cookie"; // Импортируем js-cookie для работы с cookies
+import Cookies from "js-cookie";
 import "./App.css";
 
 const csrfToken = Cookies.get("csrftoken");
