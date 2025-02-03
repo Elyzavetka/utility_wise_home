@@ -29,3 +29,31 @@ h1 {
   align-items: center;
   margin-top: 10px;
 }
+
+.householdBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 15px;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  color: #213547;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: fixed;
+  top: 20px;
+  right: 210px;
+  z-index: 1000;
+}
+
+.householdBtn:hover {
+  background-color: #ddf3fb;
+  color: #213547;
+}
+
+.householdBtn .houseUserIcon {
+  font-size: 20px;
+  transform: translateY(-4px);
+}
