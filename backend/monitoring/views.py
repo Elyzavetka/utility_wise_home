@@ -17,6 +17,13 @@ def household_create(request):
         household = Household.objects.create(
             street=data['street'],
             city=data['city'],
+            zip_code=data.get('zipCode', ''),
+            country=data['country'],
+            square_meter=data['squareMeter'],
+            floor_count=data['floorCount'],
+            people_count=data.get('peopleCount', 0),
+            dogs_count=data.get('dogsCount', 0),
+            cats_count=data.get('catsCount', 0),
         )
 
         # user = User.objects.create(
