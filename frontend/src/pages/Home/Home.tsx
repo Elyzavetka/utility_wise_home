@@ -6,6 +6,7 @@ import Gas from "../../components/Gas/Gas";
 import Water from "../../components/Water/Water";
 import styles from "./Home.module.css";
 import { Link } from "react-router-dom";
+import Logout from "../../components/Auth/Logout/Logout";
 
 export const Home = () => {
   return (
@@ -27,6 +28,7 @@ export const Home = () => {
             className={styles.houseUserIcon}
           />
         </Link>
+        <Logout />
       </div>
     </>
   );
