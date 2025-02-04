@@ -12,7 +12,6 @@
   transition: 0.3s;
   position: fixed;
   top: 23px;
-  /* right: 130px; */
   right: 60px;
   z-index: 1000;
 }
