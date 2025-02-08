@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./HouseHoldPage.module.css";
+import { SendRequest } from "../../api/api";
 
 const HouseHoldPage: React.FC = () => {
   const [street, setStreet] = useState("");
@@ -27,14 +28,9 @@ const HouseHoldPage: React.FC = () => {
       };
 
       console.log("Household Data Submitted:", householdData);
-
-      const response = await fetch("http://localhost:8000/api/household/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(householdData),
-      });
+      const jsonString = JSON.stringify(householdData);
+      console.log("json string Submitted:", jsonString);
+      const response = await SendRequest(jsonString);
 
       if (response.ok) {
         alert("Data submitted successfully.");
@@ -43,11 +39,11 @@ const HouseHoldPage: React.FC = () => {
         setCity("");
         setZipCode("");
         setCountry("");
-        setSquareMeter(0);
-        setFloorCount(0);
-        setPeopleCount(0);
-        setDogsCount(0);
-        setCatsCount(0);
+        setSquareMeter("");
+        setFloorCount("");
+        setPeopleCount("");
+        setDogsCount("");
+        setCatsCount("");
       } else {
         throw new Error("Failed to submit data");
       }
