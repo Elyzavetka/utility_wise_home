@@ -17,12 +17,12 @@ class Household(models.Model):
         return f"Household {self.household_id} - {self.street}, {self.city}"
 
 
-# class User(models.Model):
-#     user_id = models.AutoField(primary_key=True)
-#     username = models.CharField(max_length=255)
-#     email = models.EmailField(max_length=255)
-#     household = models.ForeignKey(
-#         Household, on_delete=models.CASCADE, related_name='users')
+class User(models.Model):
+    user_id = models.AutoField(primary_key=True)
+    username = models.CharField(max_length=255)
+    password = models.CharField(max_length=255)
+    email = models.EmailField(max_length=255)
+    households = models.ManyToManyField(Household, related_name='users_direct')
 
-#     def __str__(self):
-#         return self.username
+    def __str__(self):
+        return self.username
