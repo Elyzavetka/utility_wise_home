@@ -56,3 +56,20 @@ h1 {
 .householdBtn .houseUserIcon {
   transform: translateY(-3px);
 }
+
+.yearlyUsageContainer {
+  padding-top: 20px;
+  height: 400px;
+  width: 100%;
+}
+
+.navMenu {
+  height: 80px;
+  width: 100vw;
+  background-color: #ddf3fb;
+  position: fixed;
+}
+
+.title {
+  padding-top: 80px;
+}

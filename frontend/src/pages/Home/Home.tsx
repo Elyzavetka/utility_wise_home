@@ -7,11 +7,22 @@ import Water from "../../components/Water/Water";
 import styles from "./Home.module.css";
 import { Link } from "react-router-dom";
 import Logout from "../../components/Auth/Logout/Logout";
+import YearlyUsage from "../../components/YearlyUsage/YearlyUsage";
 
 export const Home = () => {
   return (
     <>
-      <h1>
+      <div className={styles.navMenu}>
+        <Link to="/house-hold" className={styles.householdBtn}>
+          My Household
+          <FontAwesomeIcon
+            icon={faHouseUser}
+            className={styles.houseUserIcon}
+          />
+        </Link>
+        <Logout />
+      </div>
+      <h1 className={styles.title}>
         <span className={styles.utilitySection}>Utility</span>{" "}
         <span className={styles.wiseSection}>Wise</span>{" "}
         <span className={styles.homeSection}>Home</span>
@@ -21,14 +32,9 @@ export const Home = () => {
         <Electricity />
         <Gas />
         <Water />
-        <Link to="/house-hold" className={styles.householdBtn}>
-          My Household
-          <FontAwesomeIcon
-            icon={faHouseUser}
-            className={styles.houseUserIcon}
-          />
-        </Link>
-        <Logout />
+      </div>
+      <div className={styles.yearlyUsageContainer}>
+        <YearlyUsage />
       </div>
     </>
   );
