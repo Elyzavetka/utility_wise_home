@@ -10,10 +10,18 @@ import {
 } from "recharts";
 
 const data = [
-  { name: "Jan", el: 400, gas: 600, wt: 60 },
-  { name: "Feb", el: 600, gas: 200, wt: 90 },
-  { name: "March", el: 200, gas: 800, wt: 120 },
-  { name: "Apr", el: 800, gas: 600, wt: 250 },
+  { name: "Jan", el: 420, gas: 820, wt: 70 },
+  { name: "Feb", el: 230, gas: 140, wt: 20 },
+  { name: "Mar", el: 210, gas: 710, wt: 110 },
+  { name: "Apr", el: 720, gas: 600, wt: 240 },
+  { name: "May", el: 790, gas: 420, wt: 220 },
+  { name: "Jun", el: 650, gas: 310, wt: 150 },
+  { name: "Jul", el: 600, gas: 280, wt: 120 },
+  { name: "Aug", el: 620, gas: 450, wt: 130 },
+  { name: "Sep", el: 750, gas: 470, wt: 220 },
+  { name: "Oct", el: 790, gas: 510, wt: 230 },
+  { name: "Nov", el: 810, gas: 600, wt: 250 },
+  { name: "Dec", el: 850, gas: 650, wt: 260 },
 ];
 
 const YearlyUsage: React.FC = () => {
@@ -26,8 +34,8 @@ const YearlyUsage: React.FC = () => {
         <Tooltip />
         <Legend />
         <Line type="monotone" dataKey="el" stroke="#D98E04" />
-        <Line type="monotone" dataKey="gas" stroke="#28A745" />
-        <Line type="monotone" dataKey="wt" stroke="#3E92CC" />
+        <Line type="monotone" dataKey="gas" stroke="#0055A4" />
+        <Line type="monotone" dataKey="wt" stroke="#00AEEF" />
       </LineChart>
     </ResponsiveContainer>
   );
