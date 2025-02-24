@@ -74,7 +74,7 @@ Make sure you have the following installed on your system:
     ```
   #### Configure the database connection in settings.py: Open settings.py in your Django project and modify the DATABASES setting to match your PostgreSQL setup:
   
-    ```
+    ```python
     DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -87,11 +87,12 @@ Make sure you have the following installed on your system:
     }
     ```
   #### Run the migrations: 
-    After the database is created and configured in settings.py, apply the migrations to create the necessary tables:
+  
+  After the database is created and configured in settings.py, apply the migrations to create the necessary tables:
     
-      ```
-      python manage.py migrate
-      ```
+    ```bash
+    python manage.py migrate
+    ```
    
 
 
