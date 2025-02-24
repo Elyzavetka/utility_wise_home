@@ -43,5 +43,21 @@ Make sure you have the following installed on your system:
   ```bash
   pip install django
   ```
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Elyzavetka/utility_wise_home.git
+   cd utility_wise_home
+   ```
+2. Create a virtual environment and activate it:
+
+  ```bash
+  python -m venv env
+  source env/bin/activate  # On Windows use `env\Scripts\activate`
+   ```
+3. Install all dependencies from `requirements.txt`:
+
+```bash
+pip install -r requirements.txt
 
 
