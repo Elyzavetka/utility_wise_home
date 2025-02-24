@@ -43,6 +43,8 @@ Make sure you have the following installed on your system:
   ```bash
   pip install django
   ```
+### Setting Up the Backend
+
 1. Clone the repository:
 
    ```bash
@@ -57,7 +59,37 @@ Make sure you have the following installed on your system:
    ```
 3. Install all dependencies from `requirements.txt`:
 
-```bash
-pip install -r requirements.txt
+  ```bash
+  pip install -r requirements.txt
+  ```
+4. Set up your PostgreSQL database
+  Follow these steps to configure PostgreSQL:
+
+  #### Create a PostgreSQL database
+
+  Create a new database using PostgreSQL. You can do this from a PostgreSQL client (e.g., pgAdmin or command line). Here's an example SQL command:
+
+  ```sql
+  CREATE DATABASE utility_wise_home;
+  ```
+  #### Configure the database connection in settings.py: Open settings.py in your Django project and modify the DATABASES setting to match your PostgreSQL setup:
+    ```python
+    DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'utility_wise_home',  # The name of your PostgreSQL database
+        'USER': 'your_postgresql_user',  # Your PostgreSQL username
+        'PASSWORD': 'your_postgresql_password',  # Your PostgreSQL password
+        'HOST': 'localhost',  # Usually 'localhost' if running locally
+        'PORT': '5432',  # Default PostgreSQL port
+      }
+    }
+    ```
+  #### Run the migrations: 
+    After the database is created and configured in settings.py, apply the migrations to create the necessary tables:
+    ```bash
+    python manage.py migrate
+    ```
+
 
 
