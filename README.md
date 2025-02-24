@@ -53,15 +53,15 @@ Make sure you have the following installed on your system:
    ```
 2. Create a virtual environment and activate it:
 
-  ```bash
-  python -m venv env
-  source env/bin/activate  # On Windows use `env\Scripts\activate`
-   ```
+    ```bash
+    python -m venv env
+    source env/bin/activate  # On Windows use `env\Scripts\activate`
+    ```
 3. Install all dependencies from `requirements.txt`:
 
-  ```bash
-  pip install -r requirements.txt
-  ```
+    ```bash
+    pip install -r requirements.txt
+    ```
 4. Set up your PostgreSQL database
   Follow these steps to configure PostgreSQL:
 
@@ -69,12 +69,12 @@ Make sure you have the following installed on your system:
 
   Create a new database using PostgreSQL. You can do this from a PostgreSQL client (e.g., pgAdmin or command line). Here's an example SQL command:
 
-  ```sql
-  CREATE DATABASE utility_wise_home;
-  ```
+    ```sql
+    CREATE DATABASE utility_wise_home;
+    ```
   #### Configure the database connection in settings.py: Open settings.py in your Django project and modify the DATABASES setting to match your PostgreSQL setup:
   
-    ```python
+    ```
     DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -89,9 +89,9 @@ Make sure you have the following installed on your system:
   #### Run the migrations: 
     After the database is created and configured in settings.py, apply the migrations to create the necessary tables:
     
-    ```bash
-    python manage.py migrate
-    ```
+      ```
+      python manage.py migrate
+      ```
    
 
 
