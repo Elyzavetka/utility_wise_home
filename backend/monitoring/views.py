@@ -13,7 +13,7 @@ def household_create(request):
     try:
         data = json.loads(request.body)
 
-        user = User.objects.get(id=data['user_id'])
+        user = User.objects.get(user_id=data['user_id'])
 
         # Create a new household object and also store it in the database
         household = Household.objects.create(
